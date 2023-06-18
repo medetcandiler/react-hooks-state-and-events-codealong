@@ -1,7 +1,7 @@
-import React from "react";
+function Toggle({handleToggleClick, isOn}) {
+  console.log(isOn)
 
-function Toggle() {
-  return <button>OFF</button>;
+  return <button onClick={handleToggleClick}>{isOn ? 'ON' : 'OFF'}</button>;
 }
 
 export default Toggle;
